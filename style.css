@@ -18,39 +18,22 @@ body {
 main {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
 
-.heart {
-    position: absolute;
-    z-index: -1;
-    top: 30%;
-    height: 450px;
-    /* adjust to control the size */
-    aspect-ratio: 1;
-    --_m: radial-gradient(#000 69%, #0000 70%) 84.5%/50%;
-    -webkit-mask-box-image: var(--_m);
-    mask-border: var(--_m);
-    clip-path: polygon(-41% 0, 50% 91%, 141% 0);
-    background: #cc333f;
-    filter: blur(20px);
-}
-
-/* fallback until better support for mask-border */
-@supports not (-webkit-mask-box-image: var(--_m)) {
-    .heart {
-        mask:
-            radial-gradient(at 70% 31%, #000 29%, #0000 30%),
-            radial-gradient(at 30% 31%, #000 29%, #0000 30%),
-            linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
-    }
-}
 
 div.titulo {
     text-align: center;
-    line-height: 15px;
+    line-height: 10px;
+    background-image: url(./images/Coracao.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 550px;
+    padding: 150px;
 }
 
 div.titulo>h1 {
@@ -60,12 +43,7 @@ div.titulo>h1 {
 }
 
 /*Linha para timeline*/
-div.line {
-    position: absolute;
-    width: 6px; height: 200px;
-    background-color: white;
-    bottom: -50px;
-}
+
 
 /*Timeline*/
 /* The actual timeline (the vertical ruler) */
@@ -79,9 +57,9 @@ div.line {
 .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
+    width: 6px; 
+    height: calc(100% + 100px);
     background-color: white;
-    top: 0;
     bottom: 0;
     left: 50%;
     margin-left: -3px;
@@ -105,7 +83,7 @@ div.line {
     background-color: white;
     border: 4px solid #FF9F55;
     top: 15px;
-    border-radius: 50%;
+    border-radius: 20%;
     z-index: 1;
 }
 

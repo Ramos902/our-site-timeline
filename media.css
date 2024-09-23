@@ -1,0 +1,52 @@
+/* Media queries - para telas menores que 1024px */
+@media screen and (max-width: 1024px) {
+    div.titulo > h1 {
+        font-size: 4em; /* Reduzir o tamanho da fonte para telas menores */
+    }
+
+
+    .line {
+        height: 150px; /* Ajustar a altura da linha */
+    }
+}
+
+/* Media queries - para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    div.titulo > h1 {
+        font-size: 3em; /* Reduzir ainda mais o tamanho da fonte */
+    }
+
+    div.titulo {
+        background-size: 400px;
+    }
+
+    .container {
+        padding: 10px 20px; /* Reduzir o padding */
+    }
+
+    .container::after {
+        width: 20px; /* Ajustar o tamanho do círculo */
+        height: 20px; /* Ajustar o tamanho do círculo */
+    }
+}
+
+/* Media queries - para telas menores que 480px */
+@media screen and (max-width: 480px) {
+    div.titulo > h1 {
+        font-size: 2.5em; /* Tamanho ainda menor para cabeçalhos */
+    }
+
+    div.titulo {
+        padding: 100px;
+        background-size: 300px;
+    }
+
+    .container {
+        padding: 10px; /* Reduzir padding */
+    }
+
+    .timeline::after {
+        left: 20px; /* Ajustar a linha vertical */
+    }
+}
+
