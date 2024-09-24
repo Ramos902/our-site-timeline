@@ -3,11 +3,6 @@
     div.titulo > h1 {
         font-size: 4em; /* Reduzir o tamanho da fonte para telas menores */
     }
-
-
-    .line {
-        height: 150px; /* Ajustar a altura da linha */
-    }
 }
 
 /* Media queries - para telas menores que 768px */
@@ -17,28 +12,22 @@
     }
 
     div.titulo {
-        background-size: 400px;
+        width: 400px;
     }
 
-    .container {
-        padding: 10px 20px; /* Reduzir o padding */
-    }
-
-    .container::after {
-        width: 20px; /* Ajustar o tamanho do círculo */
-        height: 20px; /* Ajustar o tamanho do círculo */
-    }
 }
 
 /* Media queries - para telas menores que 480px */
 @media screen and (max-width: 480px) {
-    div.titulo > h1 {
-        font-size: 2.5em; /* Tamanho ainda menor para cabeçalhos */
+    div.h1titulos > h1 {
+        font-size: 1.3em; /* Tamanho ainda menor para cabeçalhos */
     }
 
     div.titulo {
-        padding: 100px;
-        background-size: 300px;
+        width: 300px;
+    }
+    div.titulo > img{
+        width: 100%;
     }
 
     .container {

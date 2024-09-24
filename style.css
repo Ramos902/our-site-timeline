@@ -7,7 +7,7 @@
 body {
     width: 100vw;
     height: auto;
-    margin: 0;
+    margin: 0; padding: 0;
     background-color: rgb(185, 0, 185);
     font-family: "Kanit", sans-serif;
     padding: 0% 5%;
@@ -23,21 +23,21 @@ main {
     justify-content: center;
 
 }
-
-
 div.titulo {
+    margin-top: 10%;
     text-align: center;
     line-height: 10px;
-    background-image: url(./images/Coracao.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 550px;
-    padding: 150px;
+}
+div.titulo:hover{
+    cursor: pointer;
+    transition: 200ms;
+    transform: scale(1.1);
 }
 
-div.titulo>h1 {
-    font-size: 5em;
+.h1titulos {
+    top: -50%;
+    position: relative;
+    font-size: 2em;
     color: white;
     font-weight: 500;
 }
@@ -136,6 +136,10 @@ div.titulo>h1 {
     background-color: white;
     position: relative;
     border-radius: 6px;
+}
+.content img{
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
